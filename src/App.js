@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import { Route } from "react-router-dom"
+import { NavLink } from 'react-router-dom';
 
 // -------------------- components -------------------- //
 import Home from './Components/Home/Home';
@@ -12,8 +13,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Inspiration Ink.</h1>
-        <div className="line"></div>
+        <NavLink to={"/"} className="Nav">
+          <h1>Inspiration Ink.</h1>
+          <div className="line"></div>
+        </NavLink>
       </header>
         <main className='App-main'>
         <Route exact path="/" render = {() => {
