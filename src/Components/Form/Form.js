@@ -19,10 +19,14 @@ const Form = () => {
             postInspInkPrompts(newPrompt)
             .then(data => {
                 console.log(data)
+                setErr("Success!")
+                setUserPrompt("")
             })
             .catch((err) => {
-                console.log(err)
+                setErr("I'm sorry, that didn't work. Please try again.")
             })
+        } else {
+            setErr("Please write a prompt before submitting.")
         }
     }
 
@@ -35,7 +39,7 @@ const Form = () => {
             value={userPrompt}
             onChange={event => updatePrompt(event)}
             />
-            <h3>{errorMessage}</h3>
+            <p>{errorMessage}</p>
             <div className='button-wrapper'>
             <NavLink to={"/"} className="Nav">
                 <button> Back to Home </button>

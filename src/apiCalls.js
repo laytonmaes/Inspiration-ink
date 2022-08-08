@@ -21,17 +21,6 @@ export function getWordDefinition (randomWord) {
         })
 }
 
-export function getUserSubmissions () {
-    return fetch(`http://localhost:3001`)
-    .then(response => {
-            if(!response.ok) {
-                throw new Error(response.status + " " + response.statusText)
-            } else {
-                return response.json()
-            }
-        })
-} 
-
 export function getInspInkPrompts(endPoint) {
     return fetch(`http://localhost:3001/api/v1/${endPoint}`)
     .then(response => {

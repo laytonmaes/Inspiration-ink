@@ -17,9 +17,6 @@ const Home = () => {
                 <NavLink to={"/random-inktober"} className="Nav" >
                 <button> Random Inktober Word </button>
                 </NavLink>
-                <NavLink to={"/random-busted"} className="Nav" >
-                <button> fail button </button>
-                </NavLink>
             </div>
             <div className="user-buttons">
                 <NavLink to={"/random-user"} className="Nav" >    

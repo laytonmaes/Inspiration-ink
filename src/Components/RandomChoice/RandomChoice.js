@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./RandomChoice.css"
 import { NavLink } from "react-router-dom";
-import {getRandomWord, getWordDefinition, getUserSubmissions, getInspInkPrompts} from "../../apiCalls";
+import {getRandomWord, getWordDefinition, getInspInkPrompts} from "../../apiCalls";
 
 const RandomChoice = ({userChoice}) => {
 const [randomMessageOne, setrandomMessageOne] = useState("")
