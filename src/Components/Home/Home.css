@@ -1,0 +1,23 @@
+.home{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.random-buttons {
+    margin: 2rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-buttons {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: .5rem;
+}
