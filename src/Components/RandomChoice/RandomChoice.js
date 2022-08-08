@@ -7,8 +7,20 @@ const RandomChoice = ({userChoice}) => {
 const [randomMessageOne, setrandomMessageOne] = useState("")
 const [randomMessageTwo, setrandomMessageTwo] = useState("")
 const [randomPhrase, setRandomPhrase] = useState(null)
+let title
 let mainCall = null
 let secondaryCall = null
+if(userChoice === "inspiration"){
+    title= "Inspirational Word"
+} else if (userChoice === "user"){
+title= "User Submitted Prompts!"
+} else if (userChoice === "inktober"){
+title ="Inktober Prompt"
+} else if (userChoice === "mashup" ){
+title = "Mashups!"
+} else {
+    title = "Bad Gateway"
+}
 // -------------------- apiCalls -------------------- //
 const callMainPost = () => {
     if(userChoice === "inspiration") {
@@ -82,6 +94,7 @@ const rerollFetch = () => {
 
     return (
         <section>
+            <h1>{title}</h1>
             {!mainCall && 
             <>
             <h2>We are sorry but this page does not exist </h2>

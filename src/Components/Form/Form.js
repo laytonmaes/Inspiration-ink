@@ -32,6 +32,7 @@ const Form = () => {
 
     return (
         <form>
+            <h1>Submit a Prompt!</h1>
             <input
             type="text"
             placeholder="userPrompt"
