@@ -17,6 +17,10 @@
 ### About the Project
 Welcome to Inspiration Ink!
 
+[Deployment Link](https://inspiration-ink.herokuapp.com/)
+
+![main](https://user-images.githubusercontent.com/43621994/183460794-b940e531-4942-4080-825f-055060f2e90b.png)
+
 In this project I was set out to do two things: Create a functional app in roughly 5 days from start to finish, and to create an app that is important to me and serves a group that I am very proud to be a part of, namely Artists and Writers.
 
 This application is built to provide a base that artists can use to knock themselves out of art block, create content online, or even just have a resource to easily practice in a way that facilitates automation.
@@ -28,9 +32,11 @@ I built the code for this application in roughly four days, with a couple days f
 
 Upon loading the application, you will see a page displaying all of the avalable random art prompt generators.
 You can click any of them to be brought to a screen that will load a randomly generated prompt on page load,or you can reroll until you find one that inspires you.
+![random art prompt](https://user-images.githubusercontent.com/43621994/183462213-564dc29d-88b7-4392-ab0b-5af27120398e.png)
+
 you can also go and add to a list of user generated art prompts via the "Submit Your Own Prompt" button.
 
-
+![submit response](https://user-images.githubusercontent.com/43621994/183462316-f2450706-83ce-4de0-9fa7-9329b06ade62.png)
 
  ## Potential Next Steps
  I worked for a while on building a database for this application that stored user submissions, but I just couldn't finish it in time for this projects turn in date, so that is a big one. i would also love to implement an NSFW filter on that so that users are moderated in what they can post.
