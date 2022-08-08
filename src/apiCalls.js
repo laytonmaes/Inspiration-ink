@@ -22,7 +22,7 @@ export function getWordDefinition (randomWord) {
 }
 
 export function getInspInkPrompts(endPoint) {
-    return fetch(`http://localhost:3001/api/v1/${endPoint}`)
+    return fetch(`https://inspiration-ink-api.herokuapp.com/api/v1/${endPoint}`)
     .then(response => {
         if(!response.ok){
             throw new Error(response.status + " " + response.statusText)
@@ -33,7 +33,7 @@ export function getInspInkPrompts(endPoint) {
 }
 
 export function postInspInkPrompts(data) {
-    return fetch("http://localhost:3001/api/v1/user",
+    return fetch("https://inspiration-ink-api.herokuapp.com/api/v1/user",
     {
         method: "POST",
         headers: { "Content-Type": "application/json"},
